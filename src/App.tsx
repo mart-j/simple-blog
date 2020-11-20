@@ -40,7 +40,7 @@ const App = () => {
   };
 
   const readMoreButtonHandler = (id: number) => {
-    history.push(`/articles/${id}`);
+    history.push(`/simple-blog/articles/${id}`);
   };
 
   useEffect(() => {
