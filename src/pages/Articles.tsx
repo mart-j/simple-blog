@@ -27,7 +27,7 @@ const Articles: FC<Props> = ({ comments, posts, addComment, inputElement }) => {
   });
   const history = useHistory();
   const backButtonHandler = () => {
-    history.push('/');
+    history.push('/simple-blog');
   };
 
   useEffect(() => {});
