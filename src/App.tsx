@@ -56,7 +56,7 @@ const App = () => {
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
-        <Link to="/simple/blog">Home</Link>
+        <Link to="/simple-blog">Home</Link>
         <Link to="/simple-blog/about">About</Link>
       </nav>
       <Switch>
