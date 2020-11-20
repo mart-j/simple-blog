@@ -56,17 +56,17 @@ const App = () => {
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/simple/blog">Home</Link>
+        <Link to="/simple-blog/about">About</Link>
       </nav>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/simple-blog">
           <Home readMoreButtonHandler={readMoreButtonHandler} posts={posts!} />
         </Route>
-        <Route exact path="/about">
+        <Route exact path="/simple-blog/about">
           <About />
         </Route>
-        <Route path="/articles/:articleId">
+        <Route path="/simple-blog/articles/:articleId">
           <Articles
             comments={comments!}
             inputElement={inputElement}
