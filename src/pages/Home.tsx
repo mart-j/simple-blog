@@ -1,23 +1,20 @@
-import React, { FC } from 'react';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+import POSTS from '../assets/POSTS';
 
-type Posts = {
-  body: string;
-  id: number;
-  title: string;
-  userId: number;
-};
 
-type Props = {
-  posts: Posts[];
-  readMoreButtonHandler: (id: number) => void;
-};
-const Home: FC<Props> = ({ readMoreButtonHandler, posts }) => {
+const Home = () => {
+  const history = useHistory();
+  const readMoreButtonHandler = (id: number) => {
+    history.push(`/simple-blog/articles/${id}`);
+  };
+
   return (
     <section>
       <h1>Sākums</h1>
 
-      {posts &&
-        posts?.map(({ id, title }) => {
+      {POSTS &&
+        POSTS()?.map(({ id, title }) => {
           return (
             <>
               <div key={id.toString()}>{title}</div>
