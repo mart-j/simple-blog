@@ -1,0 +1,32 @@
+.container {
+    margin: 20px;
+}
+
+.commentContainer {
+   
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.addCommentWrapper {
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+
+.commentBody {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.commentName {
+    font-size: small;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.commentFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -4,6 +4,7 @@ import POSTS from '../assets/POSTS';
 import Comments from '../comonents/comments/Comments';
 import Button from '../comonents/button/Button';
 
+
 const Articles = () => {
   const { articleId } = useParams<{ articleId: string }>();
 
@@ -19,13 +20,14 @@ const Articles = () => {
   });
 
   return (
-    <section>
+    <section style={{ maxWidth: '800px', margin: 'auto' }}>
       <h1>
         {article?.id} {article?.title}
       </h1>
       <p>{article?.body}</p>
-      <Button onClickHandler={backButtonHandler}>Go Back</Button>
+
       <Comments articleId={articleId} />
+      <Button onClickHandler={backButtonHandler}>Back to home</Button>
     </section>
   );
 };
