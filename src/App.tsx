@@ -1,14 +1,18 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Articles from './pages/Articles';
+import Navigation from './comonents/navigation/Navigation';
+
+
 
 const App = () => {
   return (
     <>
-      <Link to="/simple-blog">Home</Link>
-      <Link to="/simple-blog/about">About</Link>
+      <Navigation>
+
+      </Navigation>
       <Switch>
         <Route exact path="/simple-blog">
           <Home />

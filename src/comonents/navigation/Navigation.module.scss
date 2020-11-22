@@ -1,0 +1,29 @@
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  justify-content: center;
+
+  background-color: #000000;
+}
+
+.sectionBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.log {
+  width: 100px;
+}
+.item {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}
+.active {
+  color: rgb(49, 162, 182);
+}

@@ -1,0 +1,34 @@
+.section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 90%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+}
+
+.headingSecondary {
+    margin-left: 20px;
+}
+.headingSecondary:first-letter {
+    
+  text-transform: uppercase;
+}
+
+.post {
+    padding-right: 40px;
+}
+.paragraph:first-letter {
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-left: 20px;
+  line-height: 50px;
+}
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
