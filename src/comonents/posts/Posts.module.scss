@@ -12,15 +12,14 @@
 }
 
 .headingSecondary {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 .headingSecondary:first-letter {
-    
   text-transform: uppercase;
 }
 
 .post {
-    padding-right: 40px;
+  padding-right: 40px;
 }
 .paragraph:first-letter {
   text-transform: uppercase;
@@ -29,6 +28,6 @@
   line-height: 50px;
 }
 .buttonWrapper {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }

@@ -44,7 +44,6 @@ const Comments: FC<Props> = ({ articleId }) => {
 
   // Adding comments to database
   const addComment = () => {
-    console.log(inputElement.current!.value);
     if (inputElement.current!.value) {
       const commentsRef = firebase.database().ref('Comments');
       commentsRef.push({

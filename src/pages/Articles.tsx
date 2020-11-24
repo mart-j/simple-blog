@@ -3,7 +3,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import POSTS from '../assets/POSTS';
 import Comments from '../comonents/comments/Comments';
 import Button from '../comonents/button/Button';
-
+import Section from '../comonents/section/Section';
 
 const Articles = () => {
   const { articleId } = useParams<{ articleId: string }>();
@@ -20,15 +20,12 @@ const Articles = () => {
   });
 
   return (
-    <section style={{ maxWidth: '800px', margin: 'auto' }}>
-      <h1>
-        {article?.id} {article?.title}
-      </h1>
+    <Section>
+      <h1>{article?.title}</h1>
       <p>{article?.body}</p>
-
       <Comments articleId={articleId} />
       <Button onClickHandler={backButtonHandler}>Back to home</Button>
-    </section>
+    </Section>
   );
 };
 export default Articles;
